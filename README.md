@@ -1,1 +1,1 @@
-# VDI
+# Nice DCV Desktop
