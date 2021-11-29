@@ -1,0 +1,24 @@
+allow— 授予对功能的访问权。
+disallow— 拒绝对功能的访问权，但可被后续权限覆盖。
+deny— 拒绝对功能的访问权，但无法被后续权限覆盖。功能可以包含单个 NICE DCV 功能和/或别名。功能列表必须用空格分隔。NICE DCV 包括一个内置的builtin别名，其中包括所有 NICE DCV 功能。
+可在权限文件中引用以下功能：
+display — 从 NICE DCV 服务器接收视觉数据。
+clipboard-copy — 将数据从 NICE DCV 服务器复制到客户端剪贴板。
+clipboard-paste — 将数据从客户端剪贴板粘贴到 NICE DCV 服务器。
+file-download — 从会话存储中下载文件。
+file-upload — 将文件上传到会话存储。
+mouse — 从客户端指针输入到 NICE DCV 服务器。
+keyboard — 从客户端键盘输入到 NICE DCV 服务器。
+keyboard-sas — 使用安全注意序列 (Ctrl+Alt+Del)。需要 keyboard 功能。在 DCV 2017.3 版及更高版本上受支持。
+touch — 使用本机触摸事件。在 DCV 2017.3 版及更高版本上受支持。
+stylus — 从专门的 USB 设备（如 3D 指点设备或绘图板）输入。
+usb — 使用来自客户端的 USB 设备。
+pointer — 查看 NICE DCV 服务器鼠标位置事件和指针形状。在 DCV 2017.3 版及更高版本上受支持。
+audio-out — 在客户端上播放 NICE DCV 服务器音频。
+audio-in — 将音频从客户端插入到 NICE DCV 服务器。
+printer — 从 NICE DCV 服务器创建 PDF 或 XPS 文件。
+smartcard — 从客户端读取智能卡。
+webcam — 在会话中使用连接到客户端计算机的网络摄像头。在 DCV 2021.0 版及更高版本受支持。
+screenshot — 保存远程桌面的屏幕截图。它在版本 NICE DCV 2021.2 及更高版本上受支持。
+删除时screenshot授权，我们建议您禁用clipboard-copy权限。这可以防止用户捕获服务器剪贴板上的屏幕截图，然后将它们粘贴到客户端上。当screenshot授权被拒绝，Windows 和 macOS 也将阻止外部工具捕获客户端的屏幕截图。例如，在 NICE DCV 客户端窗口上使用 Windows 剪切工具将生成黑色图像。
+builtin — 所有功能。
