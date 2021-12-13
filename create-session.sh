@@ -7,7 +7,7 @@ echo -e "\033[31m `date` ! \033[0m"
 read -p " Enter login your name: " username
 read -p " Enter session  name: " session
 
-echo -e "\033[31m Create disble-clipboard file  ! \033[0m"
+echo -e "\033[31m Create permissions file  ! \033[0m"
 
 cat >> permissions-$username.file <<EOF
 [permissions]
